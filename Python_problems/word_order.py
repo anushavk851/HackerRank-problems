@@ -1,0 +1,12 @@
+from collections import OrderedDict
+
+d = OrderedDict()
+
+n = int(input())
+
+for _ in range(n):
+    word = input()
+    d[word] = d.get(word, 0) + 1
+
+print(len(d))
+print(*d.values())
